@@ -149,3 +149,30 @@ Many of the directories contain working information used by PostgreSQL in execut
 [TimescaleDB Official Website](https://www.timescale.com/)
 
 [pgCluu GitHub Repository](https://github.com/darold/pgcluu)
+
+---
+
+
+## Using active directory
+
+[Postgres and AD](https://www.strongdm.com/blog/connecting-postgres-to-active-directory-for-authentication)
+
+[Integrating PostgreSQL with Active Directory for LDAP Authentication](https://medium.com/@kemalozz/integrating-postgresql-with-active-directory-for-ldap-authentication-360526dfdb25)
+
+## Groups and Rolds
+
+```sql
+CREATE ROLE group_role;
+CREATE ROLE user_role LOGIN PASSWORD 'xxx';
+GRANT group_role TO user_role;
+
+SELECT r.rolname AS member,
+       m.rolname AS group
+FROM pg_auth_members am
+    JOIN pg_roles r ON am.member = r.oid
+    JOIN pg_roles m ON am.roleid = m.oid
+WHERE r.rolname = 'user_role';
+
+
+
+```

@@ -1,5 +1,7 @@
 # Class Repository
 
+**Due to unexpected circumstances, the repo update will be delayed until Monday Dec  9**
+
 This is the class repository for the Dec 2-4 PostgreSQL class
 
 There will be a final update to the repo on Dec 5 to include any additional materials that were added during class.

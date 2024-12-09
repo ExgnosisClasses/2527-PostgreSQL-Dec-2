@@ -502,3 +502,12 @@ OPTIONS (schema 'ORACLE_SCHEMA', table 'EMPLOYEES');
 ```sql
 SELECT * FROM oracle_employees WHERE emp_salary > 50000;
 ```
+---
+
+## Database Mocking
+
+[Mock Data Utility](https://github.com/faisaltheparttimecoder/mock-data)
+
+[Pytest and PostgreSQL: Fresh database for every test](https://dev.to/liborjelinek/pytest-and-postgresql-fresh-database-for-every-test-4eni)
+
+[Clean PostgreSQL Databases for Your Tests](https://pytest-pgsql.readthedocs.io/en/latest/)
